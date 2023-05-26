@@ -29,8 +29,7 @@ import kotlin.concurrent.schedule
 
 @Composable
 fun HomeScreen(
-    viewModel: MainViewModel,
-
+    viewModel: MainViewModel
 ) {
     val posts: List<PostModel>
     by viewModel.allPosts.observeAsState(listOf())
